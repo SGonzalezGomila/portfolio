@@ -4,6 +4,9 @@ body {
     background-color: #f0f4f8;
     color: #333;
 }
+html {
+    scroll-behavior: smooth;
+}
 .animate__animated.animate__slideInDown  {
     animation-duration: 3s; /* Ajusta el tiempo según tus necesidades */
 }
@@ -224,3 +227,5 @@ body {
     width: 30px;
     height: 30px;
 }
+
+
