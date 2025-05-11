@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Santiago</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="plane">
+        <img src="./assets/img/decorative-plane.png" alt="Decorative plane" class="decorative-plane">
+    </div>
+        <div class="computer">
+            <img src="./assets/img/decorative-computer.png" alt="Decorative-computer" class="decorative-computer"/>
+        </div>
+
+        <button id="languageToggle">Switch to English</button>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#hero" data-es="Inicio" data-en="Home">Inicio</a></li>
+            <li><a href="#tech-stack" data-es="Tecnologías" data-en="Technologies">Tecnologías</a></li>
+            <li><a href="#projects" data-es="Proyectos" data-en="Projects">Proyectos</a></li>
+            <li><a href="#contact" data-es="Contacto" data-en="Contact">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-image">
+            <img src="./assets/img/Imagen de WhatsApp 2024-08-29 a las 12.18.35_ead02f42-Photoroom.png" alt="Imagen de presentación">
+        </div>
+
+        <div class="hero-content">
+
+            <h1 data-es="Hola! <br/>Soy <span class='hero-name'>Santiago</span>" 
+                data-en="Hello! <br/>I'm <span class='hero-name'>Santiago</span>">
+                Hola! <br/>Soy <span class="hero-name">Santiago</span>
+            </h1>
+
+            <p data-es="Desarrollador Web y de aplicaciones." data-en="Web and Application Developer.">Desarrollador Web y de aplicaciones.</p>
+            <div class="hero-buttons">
+                <button onclick="document.getElementById('projects').scrollIntoView();" data-es="Proyectos" data-en="Projects">Proyectos</button>
+                
+                <a href="./assets/cv/CV-Santiago-Gonzalez-Gomila.pdf" download class="cv-button" data-es="Descargar CV" data-en="Download CV">Descargar CV</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Technologies -->
+    <section id="tech-stack" class="tech-stack">
+        <div class="tech-content">
+            <h1 class="tech-name" data-es="Tecnologías" data-en="Technologies">Tecnologías</h1>
+            <div class="tech-background">
+                <div class="tech-item">
+                    <i class="fa-brands fa-python"></i>
+                    <h4>Python</h4>
+                </div>
+                <div class="tech-item">
+                    <i class="fa-brands fa-java"></i>
+                    <h4>Java</h4>
+                </div>
+                <div class="tech-item">
+                    <i class="fa-brands fa-bootstrap"></i>
+                    <h4>Bootstrap</h4>
+                </div>
+                <div class="tech-item">
+                    <i class="fa-brands fa-js"></i>
+                    <h4>JavaScript</h4>
+                </div>
+                <div class="tech-item">
+                    <i class="fa-brands fa-html5"></i>
+                    <h4>HTML</h4>
+                </div>
+                <div class="tech-item">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h4>CSS</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+
+        <h1 data-es="Mis Proyectos" data-en="My Projects">Mis Proyectos</h2>
+
+        <div class="project-cards">
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./assets/img/fotos-de-proyectos/image.png" alt="Proyecto 1">
+                    </div>
+                    <div class="card-info">
+                        <h3 data-es="Modernización web" data-en="Website Modernization">Modernización web</h3>
+                        <p data-es="A pedido del cliente mantuve la estética pero la modernicé realizándole ajustes de estilos y animaciones."
+                           data-en="Upon client request, I maintained the aesthetics but modernized it with style adjustments and animations.">
+                           A pedido del cliente mantuve la estética pero la modernicé realizándole ajustes de estilos y animaciones.
+                        </p>
+                        <a href="https://sgonzalezgomila.github.io/PRSL/root/pages/rampa-movil.html" target="_blank" class="card-button" data-es="Ver Proyecto" data-en="View Project">Ver Proyecto</a>
+                    </div>
+                </div>
+                <!-- Repeat similar structure for other cards -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./assets/img/fotos-de-proyectos/image%20copy.png" alt="Proyecto 2">
+                    </div>
+                    <div class="card-info">
+                        <h3 data-es="Lista de tareas" data-en="To-Do List">Lista de tareas</h3>
+                        <p data-es="Creé una aplicación de lista de tareas para realizar mis trabajos en tiempo y forma. Agregué estilos y un login."
+                           data-en="I created a task list application to manage my work efficiently. Added styles and a login feature.">
+                           Creé una aplicación de lista de tareas para realizar mis trabajos en tiempo y forma. Agregué estilos y un login.
+                        </p>
+                        <a href="https://sgonzalezgomila.github.io/To-do/" target="_blank" class="card-button" data-es="Ver Proyecto" data-en="View Project">Ver Proyecto</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./assets/img/fotos-de-proyectos/Imagen%20de%20WhatsApp%202025-05-09%20a%20las%2017.23.50_20ad3a33.jpg" alt="Proyecto 3">
+                    </div>
+                    <div class="card-info">
+                        <h3 data-es="Juego de rol" data-en="Role-playing Game">Juego de rol</h3>
+                        <p data-es="Como trabajo final de la materia Programación 1 en la universidad, decidimos crear un juego de rol."
+                           data-en="As a final project for Programming 1 at university, we decided to create a role-playing game.">
+                           Como trabajo final de la materia Programación 1 en la universidad, decidimos crear un juego de rol.
+                        </p>
+                        <a href="https://github.com/SGonzalezGomila/Rol_game" target="_blank" class="card-button" data-es="Ver Proyecto" data-en="View Project">Ver Proyecto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 data-es="Contacto" data-en="Contact">Contacto</h2>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/santiago-gonzalez-gomila/" target="_blank">
+                <i class="fa-brands fa-linkedin fa-2x"></i>
+            </a>
+            <a href="https://github.com/SGonzalezGomila" target="_blank">
+                <i class="fa-brands fa-github fa-2x"></i>
+            </a>
+            <a href="https://api.whatsapp.com/send/?phone=540111554540173&text&type=phone_number&app_absent=0" target="_blank">
+                <i class="fa-brands fa-whatsapp fa-2x"></i>
+            </a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
